@@ -75,7 +75,7 @@ RUN set -xe \
 	&& make clean \
 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps
 
-COPY docker-php-ext-* /usr/local/bin/
+# COPY docker-php-ext-* /usr/local/bin/
 
 ENV PHP_BIN /usr/local/bin
 
