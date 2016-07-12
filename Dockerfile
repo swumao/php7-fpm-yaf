@@ -83,7 +83,7 @@ ENV PHP_BIN /usr/local/bin
 RUN curl -fSL "https://github.com/laruence/yaf/archive/master.zip" -o "yaf.zip"
 
 RUN unzip yaf.zip \
-    && cd yaf
+    && cd yaf-master
 
 RUN $PHP_BIN/phpize
 
